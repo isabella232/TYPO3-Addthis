@@ -1,5 +1,5 @@
 {
-    "name": "aoe/addthis",
+    "name": "typo3-ter/addthis",
     "description": "AddThis based on extbase",
     "type": "typo3-cms-extension",
     "homepage": "https://forge.typo3.org/projects/extension-addthis",
