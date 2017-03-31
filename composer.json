@@ -16,6 +16,9 @@
             "homepage": "http://www.aoe.com"
         }
     ],
+    "autoload": {
+        "classmap": ["Classes"]
+    },
     "require": {
         "php": ">=5.2.0",
         "typo3/cms-core": "*",
