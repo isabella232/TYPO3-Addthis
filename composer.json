@@ -9,6 +9,9 @@
     "issues": "https://forge.typo3.org/projects/extension-addthis/issues",
     "source": "https://forge.typo3.org/projects/extension-addthis"
   },
+  "config": {
+    "secure-http": false
+  },
   "authors": [
     {
       "name": "AOE GmbH",
