@@ -16,6 +16,7 @@
 							<label>LLL:EXT:addthis/Resources/Private/Language/locallang_db.xml:flexform.style</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<itemsProcFunc>tx_Addthis_ConfigReader->styles</itemsProcFunc>
 								<size>1</size>
 								<maxitems>1</maxitems>
@@ -56,6 +57,7 @@
 							<label>LLL:EXT:addthis/Resources/Private/Language/locallang_db.xml:flexform.services_exclude</label>
 							<config>
 								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
 								<itemsProcFunc>tx_Addthis_ConfigReader->services</itemsProcFunc>
 								<size>10</size>
 								<maxitems>100</maxitems>
@@ -67,6 +69,7 @@
 							<label>LLL:EXT:addthis/Resources/Private/Language/locallang_db.xml:flexform.services_compact</label>
 							<config>
 								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
 								<itemsProcFunc>tx_Addthis_ConfigReader->services</itemsProcFunc>
 								<size>10</size>
 								<maxitems>100</maxitems>
@@ -78,6 +81,7 @@
 							<label>LLL:EXT:addthis/Resources/Private/Language/locallang_db.xml:flexform.services_expanded</label>
 							<config>
 								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
 								<itemsProcFunc>tx_Addthis_ConfigReader->services</itemsProcFunc>
 								<size>10</size>
 								<maxitems>100</maxitems>
@@ -90,6 +94,7 @@
 							<label>LLL:EXT:addthis/Resources/Private/Language/locallang_db.xml:flexform.ui_language</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<itemsProcFunc>tx_Addthis_ConfigReader->languages</itemsProcFunc>
 								<size>1</size>
 								<default>de</default>
