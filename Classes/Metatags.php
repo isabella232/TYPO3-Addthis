@@ -1,4 +1,8 @@
 <?php
+
+use TYPO3\CMS\Core\Page\PageRenderer;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  * Generate the Metatags
  * @package addthis
@@ -9,11 +13,17 @@ class Tx_Addthis_Metatags {
      */
     private $config;
 
+	/**
+	 * @var PageRenderer
+	 */
+	private $pageRenderer;
+
     /**
      * @param Tx_Addthis_Config $config
      */
     public function __construct(Tx_Addthis_Config $config) {
         $this->config = $config;
+		$this->pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
     }
 
     /**
@@ -26,10 +36,7 @@ class Tx_Addthis_Metatags {
         } else {
             $tag = '<meta property="'.$key.'" content="'.$value.'">';
         }
-
-		if(isset($GLOBALS['TSFE'])){
-			$GLOBALS['TSFE']->getPageRenderer()->addMetaTag( $tag );
-		}
+		$this->pageRenderer->addMetaTag( $tag );
 	}
 
 	/**
